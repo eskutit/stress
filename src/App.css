@@ -63,5 +63,5 @@ button:focus {
     border: 1px solid #ddd;
     border-radius: 6px;
     user-select: all;
-    font-size: .8335vw;
+    font-size: 16px;
 }
