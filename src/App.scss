@@ -1,0 +1,82 @@
+.app span {
+    display: inline;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: fit-content(100%);
+    grid-gap: 20px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: fit-content(100%);
+    grid-gap: 6px;
+    width: 100%;
+}
+
+input {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: #6284FF auto 1px;
+}
+
+button {
+    padding: 4px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.current-active {
+    border-color: #6284FF;
+    color: #6284FF;
+}
+
+.template-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-gap: 10px;
+}
+
+.output {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    user-select: all;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+@media (max-width: 540px) {
+    .button-container {
+        grid-template-columns: repeat(4, 60px);
+    }
+}
+
+@media (max-width: 280px) {
+    .button-container {
+        grid-template-columns: repeat(3, 60px);
+    }
+}

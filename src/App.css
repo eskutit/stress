@@ -1,81 +1,101 @@
 .app span {
-    display: inline;
+  display: inline;
 }
 
 .main-container {
-    display: grid;
-    grid-template-rows: fit-content(100%);
-    grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: fit-content(100%);
+      grid-template-rows: fit-content(100%);
+  grid-gap: 20px;
 }
 
 .title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: fit-content(100%);
-    grid-gap: 6px;
-    width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: fit-content(100%);
+      grid-template-columns: fit-content(100%);
+  grid-gap: 6px;
+  width: 100%;
 }
 
 input {
-    border: 1px solid #ddd;
-    padding: 8px;
-    border-radius: 6px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input:focus {
-    outline: #6284FF auto 1px;
+  outline: #6284FF auto 1px;
 }
 
 button {
-    padding: 4px;
-    background: none;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  padding: 4px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .current-active {
-    border-color: #6284FF;
-    color: #6284FF;
+  border-color: #6284FF;
+  color: #6284FF;
 }
 
 .template-buttons {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .button-container {
-    display: grid;
-    grid-template-columns: repeat(8, 60px);
-    grid-gap: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (60px)[8];
+      grid-template-columns: repeat(8, 60px);
+  grid-gap: 10px;
 }
 
 .output {
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    user-select: all;
-    font-size: 16px;
-    word-wrap: break-word;
-    word-break: break-all;
+  padding: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+  font-size: 16px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 @media (max-width: 540px) {
-    .button-container {
+  .button-container {
+    -ms-grid-columns: (60px)[4];
         grid-template-columns: repeat(4, 60px);
-    }
+  }
 }
 
 @media (max-width: 280px) {
-    .button-container {
+  .button-container {
+    -ms-grid-columns: (60px)[3];
         grid-template-columns: repeat(3, 60px);
-    }
+  }
 }
+/*# sourceMappingURL=App.css.map */
