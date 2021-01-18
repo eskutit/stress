@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stress/static/css/main.d19e2abc.chunk.css",
-    "main.js": "/stress/static/js/main.76926579.chunk.js",
-    "main.js.map": "/stress/static/js/main.76926579.chunk.js.map",
+    "main.js": "/stress/static/js/main.299304f0.chunk.js",
+    "main.js.map": "/stress/static/js/main.299304f0.chunk.js.map",
     "runtime-main.js": "/stress/static/js/runtime-main.f4ba82ee.js",
     "runtime-main.js.map": "/stress/static/js/runtime-main.f4ba82ee.js.map",
     "static/js/2.e396b134.chunk.js": "/stress/static/js/2.e396b134.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f4ba82ee.js",
     "static/js/2.e396b134.chunk.js",
     "static/css/main.d19e2abc.chunk.css",
-    "static/js/main.76926579.chunk.js"
+    "static/js/main.299304f0.chunk.js"
   ]
 }
