@@ -15,7 +15,7 @@ export default class Templates extends Component {
     }
     handleNameChange = (e) => {
         this.setState({
-            name: e.target.value,
+            name: e.target.value.toLowerCase(),
             nameCaps: e.target.value.toUpperCase()
         }, () => {
             this.changeCopypasta(this.state.rawCopypasta);})

@@ -68,8 +68,14 @@ button:focus {
     word-break: break-all;
 }
 
-@media (max-width: 411px) {
+@media (max-width: 540px) {
     .button-container {
         grid-template-columns: repeat(4, 60px);
+    }
+}
+
+@media (max-width: 280px) {
+    .button-container {
+        grid-template-columns: repeat(3, 60px);
     }
 }
