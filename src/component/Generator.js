@@ -38,6 +38,14 @@ export default class Templates extends Component {
         })
     }
 
+    componentDidMount() {
+        this.setState({
+            rawCopypasta: "${this.state.nameCaps} ${this.state.nameCaps} ${this.state.nameCaps} ❤️ ❤️ ❤️ WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya rambut ${this.state.name} wangi aku mau nyiumin aroma wanginya ${this.state.name} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~~~ AAAAAH ${name} keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${this.state.name} AAAAA LUCCUUUUUUUUUUUUUUU............${this.state.name} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${this.state.name} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${this.state.name} gw ...${this.state.name} di laptop ngeliatin gw, ${this.state.name} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${this.state.name} aku gak mau merelakan ${this.state.name} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${this.state.name} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH",
+            copypasta: eval('`' + "${this.state.nameCaps} ${this.state.nameCaps} ${this.state.nameCaps} ❤️ ❤️ ❤️ WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya rambut ${this.state.name} wangi aku mau nyiumin aroma wanginya ${this.state.name} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~~~ AAAAAH ${name} keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${this.state.name} AAAAA LUCCUUUUUUUUUUUUUUU............${this.state.name} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${this.state.name} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${this.state.name} gw ...${this.state.name} di laptop ngeliatin gw, ${this.state.name} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${this.state.name} aku gak mau merelakan ${this.state.name} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${this.state.name} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH" + '`'),
+            currentTemplate: 'wangy'
+        })
+    }
+
     render() {
         return (
             <div className="main-container">
