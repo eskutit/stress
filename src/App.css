@@ -8,12 +8,6 @@
     grid-gap: 20px;
 }
 
-@media (max-width: 411px) {
-    .button-container {
-        grid-template-columns: repeat(4, 60px);
-    }
-}
-
 .title {
     font-weight: 600;
 }
@@ -71,4 +65,10 @@ button:focus {
     user-select: all;
     font-size: 16px;
     overflow-wrap: anywhere;
+}
+
+@media (max-width: 411px) {
+    .button-container {
+        grid-template-columns: repeat(4, 60px);
+    }
 }
