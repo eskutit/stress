@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import templateData from '../Templates.json';
+let templateData = [];
 
 export default class Templates extends Component {
     constructor() {
         super()
 
         this.state = {
+            isLoaded: false,
             name: "keqing",
             nameCaps: "KEQING",
             rawCopypasta: '',
@@ -36,6 +37,17 @@ export default class Templates extends Component {
         this.setState({
             currentTemplate: name
         })
+    }
+
+    componentWillMount() {
+        fetch('https://raw.githubusercontent.com/SheezChill/stress/master/src/Templates.json')
+            .then(resp => resp.json())
+            .then(data => templateData = data)
+            .then(() => {
+                this.setState({
+                    isLoaded: true
+                })
+            })
     }
 
     componentDidMount() {
