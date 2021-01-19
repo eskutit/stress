@@ -28,7 +28,7 @@ export default function Generator() {
 
     // Fetch JSON data
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/SheezChill/stress/master/src/newTemplate')
+        fetch('https://raw.githubusercontent.com/SheezChill/stress/master/src/Template')
             .then(res => res.json())
             .then(data => setTemplateData(data))
     }, [])
