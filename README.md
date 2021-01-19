@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Inspired by [Wangyapp](https://github.com/adorufus/RealtimeStressTextGenerator) by [Adorufus](https://github.com/adorufus)
 
 add copypastas [Here](https://github.com/SheezChill/stress/blob/master/src/Templates.json) pls thanks.  
-replace the names with ${this.state.name} and replace every uppercase names with ${this.state.nameCaps}
+replace the names with ${name} and replace every uppercase names with ${nameCaps}
